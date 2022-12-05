@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sw-toys/static/css/main.4d5c931e.css",
+    "main.js": "/sw-toys/static/js/main.0cc34b8c.js",
+    "static/js/787.a029d8c9.chunk.js": "/sw-toys/static/js/787.a029d8c9.chunk.js",
+    "static/media/home-bg.jpg": "/sw-toys/static/media/home-bg.cf4cd3ebd22dc915c07c.jpg",
+    "index.html": "/sw-toys/index.html",
+    "main.4d5c931e.css.map": "/sw-toys/static/css/main.4d5c931e.css.map",
+    "main.0cc34b8c.js.map": "/sw-toys/static/js/main.0cc34b8c.js.map",
+    "787.a029d8c9.chunk.js.map": "/sw-toys/static/js/787.a029d8c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d5c931e.css",
+    "static/js/main.0cc34b8c.js"
+  ]
+}
