@@ -2,7 +2,6 @@ import axios from "axios";
 import { useContext, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TYPES } from "./actions/shoppingActions";
-import "./App.css";
 import { CartContext } from "./context/Context";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
@@ -11,6 +10,7 @@ import Products from "./pages/Products";
 import Summary from "./pages/Summary";
 import { getPeopleByID } from "./services/people";
 import { getStarshipByID } from "./services/starship";
+import "./index.css";
 
 function App() {
   const [state, dispatch] = useContext(CartContext);

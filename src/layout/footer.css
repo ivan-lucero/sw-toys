@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--bg-color-2);
+    color: #fff;
+}
+
+.footer-copy{
+    background-color: var(--bg-color-3);
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}

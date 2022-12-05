@@ -1,0 +1,68 @@
+:root{
+    --bg-color-1: #090621;
+    --bg-color-2: #07041B;
+    --bg-color-3: #030111;
+    --bg-card: #0B0060;
+    --color-action: #1C00FF;
+    --font-family-1: 'Rubik', sans-serif;
+    --font-family-2: 'Roboto', sans-serif;
+    --text-shadow: 0px 0px 27px rgba(255, 255, 255, 0.4);  
+}
+
+.hero-1 {
+    font-family: var(--font-family-1);
+    font-size: 2.7rem;
+    text-shadow: var(--text-shadow);
+}
+.hero-2 {
+    font-family: var(--font-family-1);
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    font-family: var(--font-family-2);
+    font-size: 1.8rem;
+}
+
+.card-title {
+    font-family: var(--font-family-2);
+    font-size: 1.5rem;
+}
+
+.card-price {
+    font-family: var(--font-family-2);
+    font-size: 1.8rem;
+}
+
+.footer-title {
+    font-family: var(--font-family-1);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.text {
+    font-family: var(--font-family-2);
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover{
+    color: var(--text-color);
+}
+
+.button {
+    background-color: var(--color-action);
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--font-family-1);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.button:hover {
+    text-decoration: underline;
+}

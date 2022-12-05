@@ -1,0 +1,3 @@
+Hacer estilos de productos
+Hacer estilos de resumen de compra
+Agregar Sweet Alert

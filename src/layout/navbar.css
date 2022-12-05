@@ -1,0 +1,33 @@
+.navbar {
+    background-color: var(--bg-color-1);
+}
+
+.logo {
+    color: #fff;
+    font-family: var(--font-family-1);
+    margin-right: 40px;
+    font-size: 22px;
+}
+.link {
+    color: #fff;
+    font-family: var(--font-family-2);
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.link:hover {
+    color: #fff;
+}
+
+.cart {
+    color: #fff;
+    font-size: 1.6rem;
+}
+.cart-quantity {
+    color: #fff;
+    background-color: var(--color-action);
+    font-size: 1rem;
+    font-family: var(--font-family-2);
+    font-weight: 700;
+    border-radius: 50%;
+}
