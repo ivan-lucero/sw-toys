@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import CartCard from "../components/CartCard";
 import { CartContext } from "../context/Context";
-import { getARSvalue, getEURvalue } from "../services/exchancePrice";
 import "./summary.css";
 import MoneyType from "../components/MoneyType";
 import { Link } from "react-router-dom";
+import SummaryForm from "../components/SummaryForm";
 
 const Summary = () => {
   const [state, dispatch] = useContext(CartContext);
@@ -62,12 +62,10 @@ const Summary = () => {
             Limpiar carrito
           </button>
 
-          <section className="card-summary p-4">
-            <h2 className="hero-2">Metodo de pago</h2>
-            <p className="hero-2">
-              TOTAL: {`${parseInt(state.total)} ${price_format}`}
-            </p>
-          </section>
+          <SummaryForm
+            total={state.total}
+            price_format={state.price_format}
+          ></SummaryForm>
         </div>
       )}
     </section>

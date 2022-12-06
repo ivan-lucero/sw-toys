@@ -1,0 +1,11 @@
+.form .input {
+    background-color: var(--bg-color-1);
+    color: #fff;
+    border-color: var(--bg-color-1);
+}
+
+.form .input:focus{
+    border-color: var(--bg-color-1);
+    background-color: var(--bg-color-1);
+    color: #fff;
+}
