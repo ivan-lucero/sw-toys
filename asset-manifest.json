@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sw-toys/static/css/main.3fa60b83.css",
-    "main.js": "/sw-toys/static/js/main.aa2e373a.js",
+    "main.css": "/sw-toys/static/css/main.e7b7521f.css",
+    "main.js": "/sw-toys/static/js/main.7059ace7.js",
     "static/js/787.a029d8c9.chunk.js": "/sw-toys/static/js/787.a029d8c9.chunk.js",
     "static/media/home-bg.jpg": "/sw-toys/static/media/home-bg.cf4cd3ebd22dc915c07c.jpg",
     "index.html": "/sw-toys/index.html",
-    "main.3fa60b83.css.map": "/sw-toys/static/css/main.3fa60b83.css.map",
-    "main.aa2e373a.js.map": "/sw-toys/static/js/main.aa2e373a.js.map",
+    "main.e7b7521f.css.map": "/sw-toys/static/css/main.e7b7521f.css.map",
+    "main.7059ace7.js.map": "/sw-toys/static/js/main.7059ace7.js.map",
     "787.a029d8c9.chunk.js.map": "/sw-toys/static/js/787.a029d8c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fa60b83.css",
-    "static/js/main.aa2e373a.js"
+    "static/css/main.e7b7521f.css",
+    "static/js/main.7059ace7.js"
   ]
 }
