@@ -8,3 +8,8 @@
     margin-right: auto;
 }
 
+@media (max-width: 600px) {
+    .product-card {
+      width: 100%;
+    }
+  }

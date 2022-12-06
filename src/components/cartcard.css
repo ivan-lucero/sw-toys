@@ -15,3 +15,10 @@
     border: none;
     font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+    .cart-card {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

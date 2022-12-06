@@ -1,5 +1,4 @@
-import { Button, Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Form } from "react-bootstrap";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import "./form.css";
@@ -55,7 +54,6 @@ const SummaryForm = ({ total, price_format }) => {
           title: "Felicidades! Ha realizado su compra",
           text: "En instantes nos contactaremos para realizar el envío",
         });
-        // alert(JSON.stringify(values));
       }}
     >
       {({
