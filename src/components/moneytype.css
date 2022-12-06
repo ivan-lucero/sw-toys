@@ -1,0 +1,18 @@
+.button-money {
+    background-color: #fff;
+    color: var(--bg-color-1);
+    font-size: 1rem;
+    font-family: var(--font-family-1);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.button-money:hover {
+    text-decoration: underline;
+}
+.button-money.selected {
+    background-color: var(--color-action);
+    color: #fff;
+}

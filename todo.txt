@@ -1,3 +1,5 @@
-Hacer estilos de productos
-Hacer estilos de resumen de compra
+Hacer estilos de productos. LISTO
+Hacer estilos de resumen de compra. LISTO
+Agregar formulario de contacto en resumen de compra
+agregar pantallas de carga
 Agregar Sweet Alert

@@ -1,0 +1,17 @@
+.cart-card {
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trash-button{
+    background-color: var(--bg-colo-2);
+    color: #5647CB;
+    border: none;
+    font-size: 2rem;
+}

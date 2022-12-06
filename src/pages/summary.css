@@ -1,0 +1,10 @@
+.summary {
+    background-color: var(--bg-color-1);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.card-summary
+{
+    background-color: var(--bg-card);
+}

@@ -3,6 +3,9 @@ import { TYPES } from "../actions/shoppingActions";
 import CartCard from "../components/CartCard";
 import { CartContext } from "../context/Context";
 import { getARSvalue, getEURvalue } from "../services/exchancePrice";
+import "./summary.css";
+import MoneyType from "../components/MoneyType";
+import { Link } from "react-router-dom";
 
 const Summary = () => {
   const [state, dispatch] = useContext(CartContext);
@@ -26,48 +29,48 @@ const Summary = () => {
     }
     totalAmount();
   };
-  const changePriceToARS = () => {
-    getARSvalue().then((res) => {
-      let ars_value = res;
-      dispatch({ type: TYPES.CHANGE_PRICE_TO_ARS, payload: ars_value });
-      totalAmount();
-    });
-  };
-  const changePriceToEUR = () => {
-    getEURvalue().then((res) => {
-      let eur_value = res;
-      dispatch({ type: TYPES.CHANGE_PRICE_TO_EUR, payload: eur_value });
-      totalAmount();
-    });
-  };
-  const changePriceToUSD = () => {
-    dispatch({ type: TYPES.CHANGE_PRICE_TO_USD });
+  const addToCart = (id) => {
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     totalAmount();
   };
+
   return (
-    <div>
-      <section>
-        <button onClick={changePriceToARS}>ARS</button>
-        <button onClick={changePriceToUSD}>USD</button>
-        <button onClick={changePriceToEUR}>EUR</button>
-      </section>
-      <h3>Carrito:</h3>
-      <section>
-        {cart.map((item, index) => (
-          <CartCard
-            key={index}
-            data={item}
-            delFromCart={delFromCart}
-            price_format={price_format}
-          />
-        ))}
-        <button onClick={clearCart}>Limpiar carrito</button>
-        <button onClick={totalAmount}>MONTO TOTAL</button>
-      </section>
-      <section>
-        <p>TOTAL: {`${parseInt(state.total)} ${price_format}`}</p>
-      </section>
-    </div>
+    <section className="summary py-5">
+      {cart.length === 0 ? (
+        <div className="container">
+          <h1 className="hero-2 text-uppercase py-5">Resumen de compra:</h1>
+          <p className="card-title">Aun no hay productos en el carrito</p>
+          <Link to="/products">
+            <button className="button mt-3">Ver productos</button>
+          </Link>
+        </div>
+      ) : (
+        <div className="container">
+          <h3 className="hero-2 text-uppercase py-5">Resumen de compra:</h3>
+          <MoneyType />
+          {cart.map((item, index) => (
+            <CartCard
+              key={index}
+              data={item}
+              delFromCart={delFromCart}
+              addToCart={addToCart}
+              price_format={price_format}
+              img={"sw-toys/assets/products/" + item.id + ".png"}
+            />
+          ))}
+          <button className="button" onClick={clearCart}>
+            Limpiar carrito
+          </button>
+
+          <section className="card-summary p-4">
+            <h2 className="hero-2">Metodo de pago</h2>
+            <p className="hero-2">
+              TOTAL: {`${parseInt(state.total)} ${price_format}`}
+            </p>
+          </section>
+        </div>
+      )}
+    </section>
   );
 };
 

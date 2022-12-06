@@ -2,7 +2,7 @@
     --bg-color-1: #090621;
     --bg-color-2: #07041B;
     --bg-color-3: #030111;
-    --bg-card: #0B0060;
+    --bg-card: #0E0939;
     --color-action: #1C00FF;
     --font-family-1: 'Rubik', sans-serif;
     --font-family-2: 'Roboto', sans-serif;
@@ -27,11 +27,13 @@
 .card-title {
     font-family: var(--font-family-2);
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .card-price {
     font-family: var(--font-family-2);
     font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .footer-title {
@@ -42,6 +44,10 @@
 .text {
     font-family: var(--font-family-2);
     font-size: 1.1rem;
+}
+.text-2 {
+    font-family: var(--font-family-2);
+    font-size: .9rem;
 }
 
 a{
